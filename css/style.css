@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body{
+	background: url(../img/bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: Roboto, san-serif;
+	font-weight: 400;
+
+}
+
+/* Layout */
+.ba-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 850px;
+}
+
+.ba-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+.ba-menu {
+	margin-left: 122px;
+	margin-top: 23.5px;
+	display: flex;
+	list-style: none;
+	font-size: 12.13px;
+	font-weight: 300;
+}
+
+
+.ba-menu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.ba-menu li:not(:last-child) a:hover {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 1px;
+}
+
+
+
+
+.ba-product-card {
+	display: flex;
+	background: url(../img/product_card__pictures_bg.jpg) no-repeat;
+	max-width: 750px;
+
+}
+
+/*.ba-product-card__title {
+	margin: 0;
+	padding: 84px 25px 277px 39.5px;
+}
+
+*/
+
+/*.ba-product-card__main {
+	position: absolute;
+	top: 94px;
+	left: 41.5px;
+	right: 0;
+	bottom: 0;
+}
+
+*/
+
+.ba-product-card-left {
+	max-width: 502px;
+	max-height: 428px;
+	padding: 84px 25px 277px 39.5px;
+}
+
+.ba-product-card-left__title {
+	position: relative;
+}
+
+
+.ba-product-card-left__main {
+	position: absolute;
+	top: 10.5px;
+	left: 1.5px;
+	right: 0;
+	bottom: 0;
+}
+
+.ba-product-card-left__subitem {
+	display: flex;
+	position: relative;
+	top: 212px;
+	left: -5px;
+	bottom: 0;
+	right: 10px;
+	justify-content: center;
+}
+
+.ba-miniature-subitem:nth-child(2) {
+	margin: 0 17px;
+
+}
+
+.ba-product-card-left__button {
+	    display: flex;
+		justify-content: flex-end;
+		margin-top: -5px;
+}
+
+
+.ba-product-card-left__button a {
+	display: inline-block;
+}
+
+
+.ba-product-card-left__button a:hover {
+	opacity: 0.4;
+}
+
+
+.ba-miniature-subitem:hover{
+	opacity: 0.4;
+}
+
+
+
+
+.ba-menu li+li {
+	margin-left: 48px;
+}
+
+.ba-menu li:nth-child(1) {
+	margin-left: 1px;
+}
+
+.ba-menu li:last-child {
+	margin-top: 4.7px;
+	margin-left: 114.5px;
+}
+
+
+.ba-product-card__subitem {
+	text-align: center;
+}
+
+
+
+.ba-product-card {
+    box-shadow: 46px 0 0 -20px rgba(255, 249, 249, 0.72), -46px 0 0 -20px rgba(255, 248, 248, 0.75), 23px 0 0 -10px rgba(255, 246, 246, 0.82), -23px 0 0 -10px rgba(255, 242, 242, 0.73);
+}
+
+.ba-product-card-right {
+	max-width: 250px;
+	background: #fff;
+}
+
+.ba-product-card-right__block {
+    padding: 2.5px 31px;
+}
+
+
+
+.ba-product-card-right__title:before {
+	display: block;
+	content: attr(data-tip);
+	background: #ffa60d;
+	color: #fff;
+	padding: 4px 6px;
+	font-size: 12px;
+	font-weight: 400;
+	width: 42px;
+	margin-bottom: 12px;
+}
+
+.ba-product-card-right__title {
+	font-size: 22px;
+	margin-bottom: 0;
+}
+
+
+.ba-product-card-right__title span {
+	color: #5e4fff;
+}
+
+
+.ba-product-card-right__rate {
+	font-size: 12px;
+}
+
+.ba-product-card-right__rate img {
+	margin: 19px 0 0 8px;
+}
+
+.ba-product-card-right__price {
+    margin-top: 11px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+.ba-product-card-form__title {
+	margin-top: 22px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.ba-product-card-form__num {
+	font-size: 14.57px;
+	display: inline-block;
+	padding: 5px;
+	min-width: 25px;
+	cursor: pointer;
+	text-align: center;
+
+}
+
+
+
+
+.ba-product-card-form input {
+	visibility: hidden;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+.ba-product-card-form label + label {
+	padding-left: 10px;
+}
+
+[type="radio"]:checked + .ba-product-card-form__num {
+	border: 1px solid #000;
+}
+
+.ba-product-card-form__buttons {
+	margin-top: 30px;
+}
+
+.ba-btn {
+	width: 119px;
+	height: 30px;
+	text-transform: uppercase;
+	color:#fff;
+    background: #a200b8;
+    border: 1px solid #000;
+	text-align: center;
+	font-size: 12px;
+}
+
+.ba-btn--transparent {
+	margin-top: 4px;
+	width: 119px;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+	background: transparent;
+	color: #000;
+	border: 1px solid #000;
+
+}
+
+
+.ba-btn:hover {
+	background: #000;
+	color: #fff;
+}
+
+.ba-btn--transparent:hover {
+	background: #000;
+	color: #fff;
+}
+
+
+.ba-product-card-right__clsbtn {
+    text-align: right;
+    margin: 0;
+    padding: 10px 13px;
+}
+
+h1 {
+	margin: 0;
+}
+
+
+*/
+
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
